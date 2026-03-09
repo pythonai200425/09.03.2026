@@ -25,6 +25,6 @@ def list_and_size(path, filename):
 
 
 # change to folder on your computer!!
-list_and_size(r"D:\python_projects\AIDec\09_03_2026", 'main.py')
+print(list_and_size(r"D:\python_projects\AIDec\09_03_2026", 'main.py'))
 
 

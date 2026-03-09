@@ -28,9 +28,10 @@ def list_and_size(path, indent):
             full_path = os.path.join(path, entry)
 
             list_and_size(full_path, indent)  # recursive call !
-
         else:
-            print(' ' * indent, entry)
+            file_size = os.path.getsize(os.path.join(path, entry))
+            print(' ' * indent, entry, f"({file_size/1024:.1f}K)")
+
 
 # change to folder on your computer!!
 list_and_size(r"D:\python_projects\AIDec\09_03_2026", 0)
