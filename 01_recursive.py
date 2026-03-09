@@ -33,6 +33,11 @@ def factorial_recc(a):
         return 1
 
     #        5 * 4 * 3 * 2 * 1
+    # 5 * 4!
+    #     4 * 3!
+    #         3 * 2!
+    #             2 * 1!
+    #                 1
     result = a * factorial_recc(a - 1)
     return result
 
@@ -40,28 +45,49 @@ def factorial_recc(a):
 def sum_recc(positive):
     pass
 
-# 3 -> 1 + 2 + 3
+# 5 -> 1 + 2 + 3 + 4 + 5
 
 ############################### 2
-def multiply(a_pos, b_pos):
+def multiply_recc(a_pos, b_pos):
+    # without *
     pass
 
+# 3, 4 -> 12 3 + 3 + 3 + 3 + 0
 # 3, 2 -> 6
 # 4, 1 -> 4
 # 5, 0 -> 0
 
 ############################### 3
-def reverse_str(s):
+def reverse_str_recc(s):
+    # without reverse, without [::-1]
     pass
 
 # "hello" -> "olleh"
 
 ############################### 4
-def sum_list(l1):
+def sum_list_recc(l1):
+    # without function sum
     pass
-
 # [6, 4, 10, 15] -> 35
 
+############################### 5
+def count_digits_recc(n):
+    pass
+# 986 -> 3
+
+############################### 6
+def is_palindrome(s):
+    pass
+# "aba" -> True
+# "racecar" -> True
+# "hello" -> False
+
+############################### 7
+def count_occurrences(lst, target):
+    pass
+# count_occurrences([1,2,3,2,2,5], 2) -> 3
+# count_occurrences([7,7,7], 7) -> 3
+# count_occurrences([], 5) -> 0
 '''
 factorial(5)
 = 5 * factorial(4)
